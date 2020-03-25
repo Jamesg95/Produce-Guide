@@ -4,12 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,600,600i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css">
-    <title>J. Grigoras Farms  |  Seasonal Porduce Guide</title>
+    <title>J. Grigoras Farms  |  Seasonal Produce Guide</title>
 </head>
 <body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="#" class="img-fluid navbar-brand">
+                    <img src="assets/images/websiteLogo.png" alt="logo" width="75" height="75">
+                    <span class="ml-2 d-none d-sm-inline">J. Grigoras Farms</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#produceNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="produceNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-4"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item mx-4"><a class="nav-link" href="#produce">Produce</a></li>
+                        <li class="nav-item mx-4"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-4 login"><button class="btn btn-outline-danger loginbtn">Login</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid p-0">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="">
+                <div class="col mx-auto text-center form">
+                    <div class="text-white">
+                        <h1 class="display-4">Seasonal Produce Guide</h1>
+                        <p class="lead my-4">Find out what is in season at our farms .</p>
+                    </div>    
+                    <div class="">
+                        <form action="" class="justify-content-center">
+                            <div class="form-group col-sm-4 mx-auto">
+                                <select name="Seasons" id="seasonPicker" class="form-control">
+                                    <option value="select">Select Season...</option>
+                                    <option value="summer">Summer</option>
+                                    <option value="fall">Fall</option>
+                                    <option value="winter">Winter</option>
+                                    <option value="spring">Spring</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn text-white mt-4 searchbtn">Find Produce</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
