@@ -32,7 +32,7 @@ body {
     background: linear-gradient(
         rgba(0, 0, 0, 0.4), 
         rgba(0, 0, 0, 0.4)
-      ),url("/assets/images/bg.jpg") no-repeat center center;
+      ),url("/assets/images/bg.jpg") fixed center center;
     background-size: cover;
     padding-top: 11%;
     padding-bottom: 11%;
@@ -55,3 +55,50 @@ body {
 .searchbtn:hover {
     background-color: #9eb618
 }
+
+.ourStory h2 {
+    font-size: 1.2rem;
+    letter-spacing: 3.5px;
+    font-weight: 500;
+}
+
+.ourStory h1 {
+    font-weight: 600;
+}
+
+
+
+.storyText {
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.cards h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.cards p {
+    font-weight: 500;
+}
+
+.ourIcon {
+    width: 130px;
+    height: 130px;
+}
+
+.heart {
+    color: #FF5E5E;
+}
+
+.hands {
+    color: #EB8A54;
+}
+
+.plant {
+    color: #5DE784;
+}
+
+
+
+
