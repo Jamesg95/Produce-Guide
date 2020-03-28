@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background: #f7f7f7;
 }
 
 .navbar {
@@ -11,6 +12,11 @@ body {
 .navbar-brand, .nav-item {
     font-weight: 500;
 }
+
+.navbar-light .navbar-toggler { 
+    border: none;
+}
+
 
 .loginbtn {
     font-weight: 600;
@@ -47,12 +53,12 @@ body {
     font-weight: 400;
 }
 
-.searchbtn {
+.searchbtn,.submitbtn {
     background-color: #B0CC10;
     font-weight: 500;
 }
 
-.searchbtn:hover {
+.searchbtn:hover, .submitbtn:hover {
     background-color: #9eb618
 }
 
@@ -62,14 +68,12 @@ body {
     font-weight: 500;
 }
 
-.ourStory h1 {
+.ourStory h1, .contacthead {
     font-weight: 600;
 }
 
-
-
 .storyText {
-    line-height: 1.8;
+    line-height: 2;
     font-weight: 500;
 }
 
@@ -99,6 +103,49 @@ body {
     color: #5DE784;
 }
 
+.social-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.fb {
+    color: #3B5998;
+    cursor: pointer;
+}
+
+.ig {
+    cursor: pointer;
+}
+
+.twit {
+    color: #00ACEE;
+    cursor: pointer;
+}
+
+.yt {
+    color: #C4302B;
+    cursor: pointer;
+}
+.contactsub {
+    font-size: 1.2em;
+    font-weight: normal;
+    letter-spacing: 0.115em;
+    color: #9C9C9C;
+}
+
+.submitbtn {
+    margin-bottom: 50px;
+}
+
+.form1, .submitbtn {
+    width: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form1, .submitbtn {
+        width: 300px;
+    }
+}
 
 
 
