@@ -17,31 +17,17 @@ body {
     border: none;
 }
 
-
-.loginbtn {
-    font-weight: 600;
-    border: #CF1882 1.5px solid;
-    color: #CF1882;
-} 
-
-.loginbtn:hover {
-    background-color: #CF1882;
-  border-color: #CF1882;
+.linksvg {
+    width: 100px;
 }
-
-.seasonDropdown {
-    height: 45px;
-    width: 570px;
-}
-
 .jumbotron {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.4), 
-        rgba(0, 0, 0, 0.4)
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
       ),url("/assets/images/bg.jpg") fixed center center;
     background-size: cover;
-    padding-top: 11%;
-    padding-bottom: 11%;
+    padding-top: 9%;
+    padding-bottom: 9%;
 }
 
 .text-white h1 {
@@ -53,12 +39,21 @@ body {
     font-weight: 400;
 }
 
-.searchbtn,.submitbtn {
+.loginbtn {
+    border-color: #CC0077;
+    color: #CC0077;
+}
+.loginbtn:hover {
+    background-color: #CC0077;
+    color: white;
+}
+
+.submitbtn {
     background-color: #B0CC10;
     font-weight: 500;
 }
 
-.searchbtn:hover, .submitbtn:hover {
+.submitbtn:hover {
     background-color: #9eb618
 }
 
@@ -163,4 +158,51 @@ body {
     color: #c4c4c4;
 }
 
+.line {
+    margin-top: 120px;
+}
 
+.seasonlist {
+    padding: 0 23%;
+}
+.seasonsvg {
+    width: 100px;
+    height: 100px;
+}
+
+.sunpath {
+    color: #ec9a2e;
+}
+.summer a:hover {
+    color: #ec9a2e
+}
+
+.fallpath {
+    color: #ca5100;
+}
+
+.fall a:hover {
+    color: #ca5100;
+}
+
+.winterpath {
+    color: #5df1ff;
+}
+
+.winter a:hover {
+    color: #5df1ff
+}
+
+.springpath {
+    color: #e9a0c7;
+}
+
+.spring a:hover {
+    color: #e9a0c7;
+}
+
+.icontext {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 800;
+}

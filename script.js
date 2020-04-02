@@ -65,31 +65,37 @@ const STORE = {
     },
     winter: {
         0: {
+            id: 0,
             name: "Lemon",
             image: "lemon.jpg",
             description: "Lemon have an acidic, sharp or tangy taste. Lemons have a sour taste."
         },
         1: {
+            id: 1,
             name: "Lime",
             image: "lime.jpg",
             description: "A lime has a bitter, acidic taste."
         },
         2: {
+            id: 2,
             name: "Clementine",
             image: "clementine.jpg",
             description: "A clementine is a small, orange, seedless citrus fruit. Clementines are usually easy to peel and section, and they taste very sweet."
         },
         3: {
+            id: 3,
             name: "Cabbage",
             image: "cabbage.jpg",
             description: "When raw, its texture is somewhat rubbery and its flavor kind of peppery but once cooked, the green cabbage softens and takes on a sweeter taste."
         },
         4: {
+            id: 4,
             name: "Beet",
             image: "beet.jpg",
             description: "Beets tend to have earthy taste and smell due to the organic compound “geosmin”."
         },
         5: {
+            id: 5,
             name: "Carrot",
             image: "carrot.jpg",
             description: "Carrots may taste slightly different depending on the color, size, and where they're grown. The sugar in carrots gives them a slightly sweet flavor, but they also can taste earthy or bitter."
@@ -138,73 +144,19 @@ function summerproduce() {
     const summerfruit = Object.values(STORE.summer);
     console.log(summerfruit);
 
-
-    $('div#summerProduce').html(`
-        <div class="text-center text-md-left px-md-3 px-lg-5 mt-5">    
-            <h1 class="font-italic seasonhead">Summer</h1>
-            <p class="font-italic seasonsub">June-September</p>
-        </div>    
-        <div class="row">
-            <div class="col">
+    for(let i=0; i < summerfruit.length; i++) {
+        $('div#summerproduce').append(`   
+            <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${summerfruit[0].image}">
+                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${summerfruit[i].image}">
                     <div class="card-body">
-                        <h5 class="card-title">${summerfruit[0].name}</h5>
-                        <p class="card-text">${summerfruit[0].description}</p>
+                        <h5 class="card-title">${summerfruit[i].name}</h5>
+                        <p class="card-text">${summerfruit[i].description}</p>
                     </div> 
                 </div>
             </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${summerfruit[1].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${summerfruit[1].name}</h5>
-                        <p class="card-text">${summerfruit[1].description}</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${summerfruit[2].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${summerfruit[2].name}</h5>
-                        <p class="card-text">${summerfruit[2].description}</p>
-                    </div> 
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${summerfruit[3].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${summerfruit[3].name}</h5>
-                        <p class="card-text">${summerfruit[3].description}</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${summerfruit[4].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${summerfruit[4].name}</h5>
-                        <p class="card-text">${summerfruit[4].description}</p>
-                    </div> 
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${summerfruit[5].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${summerfruit[5].name}</h5>
-                        <p class="card-text">${summerfruit[5].description}</p>
-                    </div> 
-                </div>
-            </div>
-        </div>`
-    );
+        `);
+    }
 }
 
 
@@ -213,221 +165,80 @@ function fallproduce() {
     console.log(fallfruit);
 
 
-    $('div#fallproduce').html(`
-        <div class="text-center text-md-left px-md-3 px-lg-5  mt-5">
-            <h1 class="font-italic seasonhead">Fall</h1>
-            <p class="font-italic seasonsub">September-December</p>
-        </div>
-        <div class="row">
-            <div class="col">
+    for(let i=0; i < fallfruit.length; i++) {
+        $('div#fallproduce').append(`   
+            <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${fallfruit[0].image}">
+                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${fallfruit[i].image}">
                     <div class="card-body">
-                        <h5 class="card-title">${fallfruit[0].name}</h5>
-                        <p class="card-text">${fallfruit[0].description}</p>
+                        <h5 class="card-title">${fallfruit[i].name}</h5>
+                        <p class="card-text">${fallfruit[i].description}</p>
                     </div> 
                 </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${fallfruit[1].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${fallfruit[1].name}</h5>
-                        <p class="card-text">${fallfruit[1].description}</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${fallfruit[2].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${fallfruit[2].name}</h5>
-                        <p class="card-text">${fallfruit[2].description}</p>
-                    </div> 
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${fallfruit[3].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${fallfruit[3].name}</h5>
-                        <p class="card-text">${fallfruit[3].description}</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${fallfruit[4].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${fallfruit[4].name}</h5>
-                        <p class="card-text">${fallfruit[4].description}</p>
-                    </div> 
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${fallfruit[5].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${fallfruit[5].name}</h5>
-                        <p class="card-text">${fallfruit[5].description}</p>
-                    </div> 
-                </div>
-            </div>
-        </div>`
-    );
+            </div>`);
+    }
 }
 
 
 function winterproduce() {
+    
     const winterfruit = Object.values(STORE.winter);
-    console.log(winterfruit);
 
-
-    $('div#winterproduce').html(`
-        <div class="text-center text-md-left px-md-3 px-lg-5 mt-5">    
-            <h1 class="font-italic seasonhead">Winter</h1>
-            <p class="font-italic seasonsub">December-March</p>
-        </div>    
-        <div class="row">
-            <div class="col">
+    for(let i=0; i < winterfruit.length; i++) {
+        $('div#winterproduce').append(`   
+            <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${winterfruit[0].image}">
+                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${winterfruit[i].image}">
                     <div class="card-body">
-                        <h5 class="card-title">${winterfruit[0].name}</h5>
-                        <p class="card-text">${winterfruit[0].description}</p>
+                        <h5 class="card-title">${winterfruit[i].name}</h5>
+                        <p class="card-text">${winterfruit[i].description}</p>
                     </div> 
                 </div>
             </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${winterfruit[1].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${winterfruit[1].name}</h5>
-                        <p class="card-text">${winterfruit[1].description}</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${winterfruit[2].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${winterfruit[2].name}</h5>
-                        <p class="card-text">${winterfruit[2].description}</p>
-                    </div> 
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${winterfruit[3].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${winterfruit[3].name}</h5>
-                        <p class="card-text">${winterfruit[3].description}</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${winterfruit[4].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${winterfruit[4].name}</h5>
-                        <p class="card-text">${winterfruit[4].description}</p>
-                    </div> 
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${winterfruit[5].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${winterfruit[5].name}</h5>
-                        <p class="card-text">${winterfruit[5].description}</p>
-                    </div> 
-                </div>
-            </div>
-        </div>`
-    );
+        `);
+    }
 }
+
 
 function springproduce() {
     const springfruit = Object.values(STORE.spring);
     console.log(springfruit);
 
 
-    $('div#springproduce').html(`
-        <div class="text-center text-md-left px-md-3 px-lg-5 mt-5">    
-            <h1 class="font-italic seasonhead">Spring</h1>
-            <p class="font-italic seasonsub">March-June</p>
-        </div>    
-        <div class="row">
-            <div class="col">
+    for(let i=0; i < springfruit.length; i++) {
+        $('div#springproduce').append(`   
+            <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${springfruit[0].image}">
+                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${springfruit[i].image}">
                     <div class="card-body">
-                        <h5 class="card-title">${springfruit[0].name}</h5>
-                        <p class="card-text">${springfruit[0].description}</p>
+                        <h5 class="card-title">${springfruit[i].name}</h5>
+                        <p class="card-text">${springfruit[i].description}</p>
                     </div> 
                 </div>
             </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${springfruit[1].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${springfruit[1].name}</h5>
-                        <p class="card-text">${springfruit[1].description}</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${springfruit[2].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${springfruit[2].name}</h5>
-                        <p class="card-text">${springfruit[2].description}</p>
-                    </div> 
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${springfruit[3].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${springfruit[3].name}</h5>
-                        <p class="card-text">${springfruit[3].description}</p>
-                    </div> 
-                </div>
-            </div>
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${springfruit[4].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${springfruit[4].name}</h5>
-                        <p class="card-text">${springfruit[4].description}</p>
-                    </div> 
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card produceCard">
-                    <img height="180px" class="card-image-top rounded-top" src="assets/images/${springfruit[5].image}">
-                    <div class="card-body">
-                        <h5 class="card-title">${springfruit[5].name}</h5>
-                        <p class="card-text">${springfruit[5].description}</p>
-                    </div> 
-                </div>
-            </div>
-        </div>`
-    );
+        `);
+    }
 }
 
+function scrollDiv() {
+    let offset = 80;
+
+    $('.navbar li a').click(function(event) {
+        event.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+            scrollBy(0, -offset);
+        });   
+}
+
+function scrollSeason() {
+    let offset = 250;
+
+    $('.js-seasons').click(function(event) {
+        event.preventDefault();
+        $($(this).attr('href'))[0].scrollIntoView();
+            scrollBy(0, -offset);
+        });   
+}
 
 
 
@@ -435,3 +246,6 @@ summerproduce();
 fallproduce();
 winterproduce();
 springproduce();
+scrollDiv();
+scrollSeason();
+
