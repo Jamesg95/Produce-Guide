@@ -27,7 +27,7 @@ const STORE = {
         },
         5: {
             name: "Zucchini",
-            image: "gysquash.jpg",
+            image: "zucchini.jpg",
             description: "The zucchini is a long, cylindrical vegetable, slightly smaller at the stem end, usually dark green in color. The flesh is a pale greenish-white and has a delicate, almost sweet flavor."
         }
     },

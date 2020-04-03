@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background: #f7f7f7;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -42,6 +43,7 @@ body {
 .loginbtn {
     border-color: #CC0077;
     color: #CC0077;
+    background-color: #cc007700;
 }
 .loginbtn:hover {
     background-color: #CC0077;
@@ -202,7 +204,7 @@ body {
 }
 
 .icontext {
-    font-size: 2em;
+    font-size: 1.8em;
     font-style: italic;
     font-weight: 800;
 }
