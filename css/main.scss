@@ -1,0 +1,247 @@
+$color-bg: #f7f7f7;
+$color-login-btn: #CC0077;
+$color-submit-btn: #B0CC10;
+$color-icon-heart: #FF5E5E;
+$color-icon-hands: #EB8A54;
+$color-icon-plant: #5DE784;
+$color-icon-fb: #3B5998;
+$color-icon-twit: #00ACEE;
+$color-icon-yt: #C4302B;
+$color-icon-summer: #ec9a2e;
+$color-icon-fall: #ca5100;
+$color-icon-winter: #5df1ff;
+$color-icon-spring: #e9a0c7;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: $color-bg;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header {
+    .navbar {
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
+    }
+    .navbar-brand, .nav-item {
+        font-weight: 500;
+    }
+    .navbar-light .navbar-toggler { 
+        border: none;
+    }
+    .loginbtn {
+        border-color: $color-login-btn;
+        color: $color-login-btn;
+        background-color: #cc007700;
+        
+        &:hover {
+            background-color: $color-login-btn;
+            color: white;
+        }
+    }
+}
+
+#home {
+    .jumbotron {
+        background: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+          ),url("/assets/images/bg.jpg") fixed center center;
+        background-size: cover;
+        padding-top: 9%;
+        padding-bottom: 9%;
+
+        .text-white {
+            h1 {
+                font-weight: 500;
+            }
+            p {
+                font-size: 1.4em;               
+                font-weight: 400;
+            }
+        }
+        .seasonlist {
+            padding: 0 23%;
+        }
+        .seasonsvg {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .summer {
+            a:hover {
+                color: $color-icon-summer;
+                }
+                .sunpath {
+                    color: $color-icon-summer;
+                }
+        }
+        .fall {
+            a:hover {
+                color: $color-icon-fall;
+                }
+                .fallpath {
+                    color: $color-icon-fall;
+                }
+        }
+        .winter {
+            a:hover {
+                color: $color-icon-winter;
+                }
+                .winterpath {
+                    color: $color-icon-winter;
+                }
+        }
+        .spring {
+            a:hover {
+                color: $color-icon-spring;
+                }
+                .springpath {
+                    color: $color-icon-spring;
+                }
+        }
+        .icontext {
+            font-size: 1.8em;
+            font-style: italic;
+            font-weight: 800;
+        }
+    }
+}
+    
+main {
+    #about {
+        .ourStory {
+            h2 {
+                font-size: 1.2rem;
+                letter-spacing: 3.5px;
+                font-weight: 500;
+            }
+            h1 {
+                font-weight:600;
+            }
+        }
+        .storyText {
+            p {
+                line-height: 2;
+                font-weight: 500;
+            }
+        }
+        .cards {
+            h3 {
+                font-size: 1.8rem;
+                font-weight: 700;
+            }
+            p {
+                font-weight: 500;
+            }
+            .ourIcon {
+                width: 130px;
+                height: 130px;
+            }
+            .heart {
+                color: $color-icon-heart;
+            }
+            .hands {
+                color: $color-icon-hands;
+            }
+            .plant {
+                color: $color-icon-plant;
+            }
+        }
+    }
+    #produce {
+        .producehead {
+            font-weight: 600;
+        }
+        .producesub {
+            font-size: 1.2em;
+            font-weight: normal;
+            letter-spacing: 0.115em;
+            color: #9C9C9C;
+        }
+        #produceList {
+            .seasonheader {
+               h1 {
+                    font-weight: 700;
+                }
+                p {
+                    font-size: 2rem;
+                    color: #c4c4c4;
+                } 
+            }
+                
+            .produceCard {
+                margin: 15px auto;
+                width: 20rem;
+                height: 25rem;
+                box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.336);
+            }
+        }
+    }
+}
+
+#contact {
+    .contact-page {
+        h1 {
+            font-weight: 600;
+        }
+        h3 {
+            font-size: 1.2em;
+            font-weight: normal;
+            letter-spacing: 0.115em;
+            color: #9C9C9C;
+        }
+    }
+    .form1 {
+        width: 500px;
+        .submitbtn {
+            width: 500px;
+            background-color: $color-submit-btn;
+            font-weight: 500;
+            margin-bottom: 50px;
+            &:hover {
+                background-color: #9eb618;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .submitbtn {
+                width: 300px;
+            }
+        }
+        
+    }
+    @media only screen and (max-width: 600px) {
+            .form1 {
+                width: 300px;
+            }
+        }
+}
+
+footer {
+    .social-icon {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    
+    }
+    .fb {
+        color: $color-icon-fb;
+        }
+    .twit {
+        color: $color-icon-twit;
+        }
+    .yt {
+        color: $color-icon-yt;
+        }
+}
+
+
+.line {
+    margin-top: 120px;
+}
+

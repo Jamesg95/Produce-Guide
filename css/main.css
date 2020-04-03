@@ -1,210 +1,158 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background: #f7f7f7;
-    overflow-x: hidden;
-}
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f7f7f7; }
 
-.navbar {
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336);
-}
+html {
+  overflow-x: hidden; }
 
-.navbar-brand, .nav-item {
-    font-weight: 500;
-}
+header .navbar {
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.336); }
 
-.navbar-light .navbar-toggler { 
-    border: none;
-}
+header .navbar-brand, header .nav-item {
+  font-weight: 500; }
 
-.linksvg {
-    width: 100px;
-}
-.jumbotron {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5), 
-        rgba(0, 0, 0, 0.5)
-      ),url("/assets/images/bg.jpg") fixed center center;
-    background-size: cover;
-    padding-top: 9%;
-    padding-bottom: 9%;
-}
+header .navbar-light .navbar-toggler {
+  border: none; }
 
-.text-white h1 {
-    font-weight: 500;
-}
-
-.text-white p {
-    font-size: 1.4em;               
-    font-weight: 400;
-}
-
-.loginbtn {
-    border-color: #CC0077;
-    color: #CC0077;
-    background-color: #cc007700;
-}
-.loginbtn:hover {
+header .loginbtn {
+  border-color: #CC0077;
+  color: #CC0077;
+  background-color: #cc007700; }
+  header .loginbtn:hover {
     background-color: #CC0077;
-    color: white;
-}
+    color: white; }
 
-.submitbtn {
-    background-color: #B0CC10;
-    font-weight: 500;
-}
-
-.submitbtn:hover {
-    background-color: #9eb618
-}
-
-.ourStory h2 {
-    font-size: 1.2rem;
-    letter-spacing: 3.5px;
-    font-weight: 500;
-}
-
-.ourStory h1, .contacthead, .producehead {
-    font-weight: 600;
-}
-
-.storyText {
-    line-height: 2;
-    font-weight: 500;
-}
-
-.cards h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.cards p {
-    font-weight: 500;
-}
-
-.ourIcon {
-    width: 130px;
-    height: 130px;
-}
-
-.heart {
-    color: #FF5E5E;
-}
-
-.hands {
-    color: #EB8A54;
-}
-
-.plant {
-    color: #5DE784;
-}
-
-.social-icon {
-    height: 30px;
-    width: 30px;
-}
-
-.fb {
-    color: #3B5998;
-    cursor: pointer;
-}
-
-.ig {
-    cursor: pointer;
-}
-
-.twit {
-    color: #00ACEE;
-    cursor: pointer;
-}
-
-.yt {
-    color: #C4302B;
-    cursor: pointer;
-}
-.contactsub, .producesub {
-    font-size: 1.2em;
-    font-weight: normal;
-    letter-spacing: 0.115em;
-    color: #9C9C9C;
-}
-
-.submitbtn {
-    margin-bottom: 50px;
-}
-
-.form1, .submitbtn {
-    width: 500px;
-}
-
-@media only screen and (max-width: 600px) {
-    .form1, .submitbtn {
-        width: 300px;
-    }
-}
-
-.produceCard {
-    margin: 15px auto;
-    width: 20rem;
-    height: 25rem;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.336);
-}
-
-.seasonhead{
-    
-    font-weight: 700;
-}
-.seasonsub {
-    font-size: 2rem;
-    color: #c4c4c4;
-}
-
-.line {
-    margin-top: 120px;
-}
-
-.seasonlist {
-    padding: 0 23%;
-}
-.seasonsvg {
+#home .jumbotron {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/bg.jpg") fixed center center;
+  background-size: cover;
+  padding-top: 9%;
+  padding-bottom: 9%; }
+  #home .jumbotron .text-white h1 {
+    font-weight: 500; }
+  #home .jumbotron .text-white p {
+    font-size: 1.4em;
+    font-weight: 400; }
+  #home .jumbotron .seasonlist {
+    padding: 0 23%; }
+  #home .jumbotron .seasonsvg {
     width: 100px;
-    height: 100px;
-}
-
-.sunpath {
-    color: #ec9a2e;
-}
-.summer a:hover {
-    color: #ec9a2e
-}
-
-.fallpath {
-    color: #ca5100;
-}
-
-.fall a:hover {
-    color: #ca5100;
-}
-
-.winterpath {
-    color: #5df1ff;
-}
-
-.winter a:hover {
-    color: #5df1ff
-}
-
-.springpath {
-    color: #e9a0c7;
-}
-
-.spring a:hover {
-    color: #e9a0c7;
-}
-
-.icontext {
+    height: 100px; }
+  #home .jumbotron .summer a:hover {
+    color: #ec9a2e; }
+  #home .jumbotron .summer .sunpath {
+    color: #ec9a2e; }
+  #home .jumbotron .fall a:hover {
+    color: #ca5100; }
+  #home .jumbotron .fall .fallpath {
+    color: #ca5100; }
+  #home .jumbotron .winter a:hover {
+    color: #5df1ff; }
+  #home .jumbotron .winter .winterpath {
+    color: #5df1ff; }
+  #home .jumbotron .spring a:hover {
+    color: #e9a0c7; }
+  #home .jumbotron .spring .springpath {
+    color: #e9a0c7; }
+  #home .jumbotron .icontext {
     font-size: 1.8em;
     font-style: italic;
-    font-weight: 800;
-}
+    font-weight: 800; }
+
+main #about .ourStory h2 {
+  font-size: 1.2rem;
+  letter-spacing: 3.5px;
+  font-weight: 500; }
+
+main #about .ourStory h1 {
+  font-weight: 600; }
+
+main #about .storyText p {
+  line-height: 2;
+  font-weight: 500; }
+
+main #about .cards h3 {
+  font-size: 1.8rem;
+  font-weight: 700; }
+
+main #about .cards p {
+  font-weight: 500; }
+
+main #about .cards .ourIcon {
+  width: 130px;
+  height: 130px; }
+
+main #about .cards .heart {
+  color: #FF5E5E; }
+
+main #about .cards .hands {
+  color: #EB8A54; }
+
+main #about .cards .plant {
+  color: #5DE784; }
+
+main #produce .producehead {
+  font-weight: 600; }
+
+main #produce .producesub {
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 0.115em;
+  color: #9C9C9C; }
+
+main #produce #produceList .seasonheader h1 {
+  font-weight: 700; }
+
+main #produce #produceList .seasonheader p {
+  font-size: 2rem;
+  color: #c4c4c4; }
+
+main #produce #produceList .produceCard {
+  margin: 15px auto;
+  width: 20rem;
+  height: 25rem;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.336); }
+
+#contact .contact-page h1 {
+  font-weight: 600; }
+
+#contact .contact-page h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 0.115em;
+  color: #9C9C9C; }
+
+#contact .form1 {
+  width: 500px; }
+  #contact .form1 .submitbtn {
+    width: 500px;
+    background-color: #B0CC10;
+    font-weight: 500;
+    margin-bottom: 50px; }
+    #contact .form1 .submitbtn:hover {
+      background-color: #9eb618; }
+  @media only screen and (max-width: 600px) {
+    #contact .form1 .submitbtn {
+      width: 300px; } }
+
+@media only screen and (max-width: 600px) {
+  #contact .form1 {
+    width: 300px; } }
+
+footer .social-icon {
+  height: 30px;
+  width: 30px;
+  cursor: pointer; }
+
+footer .fb {
+  color: #3B5998; }
+
+footer .twit {
+  color: #00ACEE; }
+
+footer .yt {
+  color: #C4302B; }
+
+.line {
+  margin-top: 120px; }
