@@ -206,7 +206,6 @@ function winterproduce() {
     }
 }
 
-
 function springproduce() {
     const springfruit = Object.values(STORE.spring);
     console.log(springfruit);
