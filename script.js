@@ -137,7 +137,14 @@ const STORE = {
 }
 
 
-
+function popover() {
+    $("[data-toggle=popover]").popover({
+        html: true, 
+          content: function() {
+              return $('#popover-content').html();
+        }
+    });
+}
 
 function summerproduce() {
 
@@ -241,7 +248,7 @@ function scrollSeason() {
 }
 
 
-
+popover();
 summerproduce();
 fallproduce();
 winterproduce();

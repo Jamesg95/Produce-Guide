@@ -25,49 +25,36 @@
                             <li class="nav-item mx-4"><a class="nav-link" href="#about">About</a></li>
                             <li class="nav-item mx-4"><a class="nav-link" href="#produce">Produce</a></li>
                             <li class="nav-item mx-4"><a class="nav-link" href="#contact">Contact</a></li>
-                            <li class="nav-item mx-4 login"><button data-toggle="modal" data-target="#loginModal" class="btn loginbtn">Login</button></li>
+                            <li class="nav-item mx-4 login"><button type="button" data-html="true" id="login" data-toggle="popover"data-placement="bottom" data-container="body" class="btn loginbtn">Login</button></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <div id="loginModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title">Login </h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div id="popover-content" class="d-none">
+            <form role="form">
+                <div class="form-row">
+                    <div class="form-group col-12">
+                        <label class="sr-only" for="loginEmail">Email address</label>
+                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
                     </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label class="sr-only" for="loginEmail">Email address</label>
-                                        <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                    </div>
-                                    <div class="form-group col-12">
-                                        <label class="sr-only" for="loginPassword">Password</label>
-                                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox">
-                                            <label class="form-check-label"> Remember me
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <button type="button" class="btn btn-outline-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary btn-outline-danger loginbtn btn-sm ml-1">Sign in</button>
-                                </div>
-                            </form>
+                    <div class="form-group col-12">
+                        <label class="sr-only" for="loginPassword">Password</label>
+                        <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox">
+                            <label class="form-check-label"> Remember me
+                            </label>
                         </div>
                     </div>
                 </div>
-            </div>
+                <div class="form-row mt-2">
+                    <button type="submit" class="btn btn-outline-primary loginbtn btn-sm ml-1">Sign in</button>
+                </div>
+            </form>
         </div>
 
         <div class="container-fluid p-0" id="home">
