@@ -186,7 +186,6 @@ function fallproduce() {
     }
 }
 
-
 function winterproduce() {
     
     const winterfruit = Object.values(STORE.winter);
