@@ -5,7 +5,7 @@
   "main": "script.js",
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
   },
